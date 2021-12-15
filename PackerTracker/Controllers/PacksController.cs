@@ -32,5 +32,11 @@ namespace PackerTracker.Controllers
       Pack.ClearAll();
       return View();
     }
+    [HttpGet("/packs/{id}")]
+    public ActionResult Show(int id)
+    {
+      Pack foundItem = Pack.Find(id);
+      return View(foundItem);
+    }
   }
 }

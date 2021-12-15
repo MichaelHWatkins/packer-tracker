@@ -9,7 +9,7 @@
 <ul>
   @foreach ( Pack item in Model)
   {
-    <li>@item.ItemName , @item.Price , @item.Weight</li>
+    <li><a href="/packs/@item.Id">@item.ItemName , @item.Price , @item.Weight</a></li>
   }
 </ul>
 
